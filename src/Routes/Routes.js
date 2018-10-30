@@ -1,6 +1,17 @@
 import React, { Component, Fragment } from "react";
-import { Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
 
-import Navbar from "../Navbar/Navbar";
+import Home from '../Components/Home';
+
+export default class Routes extends Component {
+    render() {
+
+        return(
+            <Fragment>
+                <Route exact path="/" component={Home} />
+            </Fragment>
+        );
+    }
+}
 
 
