@@ -1,0 +1,17 @@
+.contactCard {
+    margin: auto;
+    border: solid green;
+    width: 15em;
+    height: 25em;
+}
+
+.subTitle {
+    font-size: 15px;
+    margin-top: -0.6em;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: ;
+}

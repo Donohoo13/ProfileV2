@@ -8,10 +8,6 @@ import {
   Collapse,
   NavItem,
   NavLink,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
 } from "mdbreact";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
@@ -37,21 +33,21 @@ export default class MainNav extends Component {
   render() {
     return (
       <div>
-        <Navbar color="indigo" dark expand="md" scrolling>
+        <Navbar className="body" color="indigo" dark expand="md" scrolling>
           <NavbarBrand>
             <strong>Conner Donohoo</strong>
           </NavbarBrand>
           {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
           <Collapse isOpen={this.state.collapse} navbar>
             <NavbarNav right>
-              <NavItem active>
+              <NavItem>
                 <NavLink to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="#">Not Sure</NavLink>
+                <NavLink to="/showcase">Showcase</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="#">Contact</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
               </NavItem>
             </NavbarNav>
           </Collapse>
