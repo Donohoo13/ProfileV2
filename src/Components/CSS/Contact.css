@@ -1,7 +1,7 @@
 .contactCard {
     margin: auto;
     border: solid green;
-    width: 15em;
+    width: 18em;
     height: 25em;
 }
 
@@ -13,5 +13,4 @@
 .icons {
     display: flex;
     justify-content: space-around;
-    margin-top: ;
 }

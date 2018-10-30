@@ -1,104 +1,95 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { TabPane, TabContent, Nav, NavItem, NavLink, Row, Col, Container } from 'mdbreact';
-import classnames from 'classnames';
+// import React, { Component } from 'react';
 
 // class Showcase extends Component {
+//     render() {
 
-//   constructor(props) {
-//     super(props);
-//     this.toggle = this.toggle.bind(this);
-//     this.state = {
-//       activeItem: '1'
-//     };
-//   }
-//   toggle(tab) {
-//     if (this.state.activeItem !== tab) {
-//       this.setState({
-//         activeItem: tab
-//       });
+//         return(
+//             <div>
+//                 Showcase page works!
+//             </div>
+//         );
 //     }
-//   }
-//   render() {
-//     return (
-//       <Router>
-//         <Container>
-//           <Nav tabs className="nav-justified">
-//             <NavItem>
-//               <NavLink
-//                 className={classnames({ active: this.state.activeItem === '1' })}
-//                 onClick={() => { this.toggle('1'); }}
-//               >
-//               Profile
-//               </NavLink>
-//             </NavItem>
-//             <NavItem>
-//               <NavLink
-//                 className={classnames({ active: this.state.activeItem === '2' })}
-//                 onClick={() => { this.toggle('2'); }}
-//               >
-//                 Follow
-//               </NavLink>
-//             </NavItem>
-//             <NavItem>
-//               <NavLink
-//                 className={classnames({ active: this.state.activeItem === '3' })}
-//                 onClick={() => { this.toggle('3'); }}
-//               >
-//                 Contact
-//               </NavLink>
-//             </NavItem>
-//           </Nav>
-//           <TabContent activeItem={this.state.activeItem}>
-//             <TabPane tabId="1">
-//               <Row>
-//                 <Col sm="12">
-//                 <br />
-//                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-//                       reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-//                       porro voluptate odit minima.</p>
-//                 </Col>
-//               </Row>
-//             </TabPane>
-//             <TabPane tabId="2">
-//               <Row>
-//                 <Col sm="12">
-//                   <br />
-//                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-//                       reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-//                       porro voluptate odit minima.</p>
-//                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-//                       reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-//                       porro voluptate odit minima.</p>
-//                 </Col>
-//               </Row>
-//             </TabPane>
-//             <TabPane tabId="3">
-//               <Row>
-//                 <Col sm="12">
-//                   <br />
-//                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-//                       reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-//                       porro voluptate odit minima.</p>
-//                 </Col>
-//               </Row>
-//             </TabPane>
-//           </TabContent>
-//         </Container>
-//       </Router>
-//     );
-//   }
 // }
 
-class Showcase extends Component {
-    render() {
+// export default Showcase;
 
-        return(
-            <div>
-                Showcase page works!
-            </div>
-        );
-    }
+import React, { Component } from "react";
+import {
+  Container,
+  Button,
+  Card,
+  CardBody,
+  CardImage,
+  CardTitle,
+  CardText
+} from "mdbreact";
+import './CSS/Showcase.css';
+import { Link } from 'react-router-dom';
+import Routes from '../Routes/Routes';
+
+class Showcase extends Component {
+  render() {
+    return (
+      <Container className="cards">
+        <Card className="card">
+          <CardImage
+            className="img-fluid"
+            src="https://www.ebuyer.com/blog/wp-content/uploads/2014/07/buttons-on-a-calculator-header1.jpg"
+          />
+          <CardBody>
+            <CardTitle>Calculator</CardTitle>
+            <CardText>
+              This was a simple functioning calculator I built with React.
+            </CardText>
+            <Button Link to="/calculator">View</Button>
+          </CardBody>
+        </Card>
+        <Card className="card">
+          <CardImage
+            className="img-fluid"
+            src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+          />
+          <CardBody>
+            <CardTitle>Card title</CardTitle>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <Button href="#">Button</Button>
+          </CardBody>
+        </Card>
+        <Card className="card">
+          <CardImage
+            className="img-fluid"
+            src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+          />
+          <CardBody>
+            <CardTitle>Card title</CardTitle>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <Button href="#">Button</Button>
+          </CardBody>
+        </Card>
+        <Card className="card">
+          <CardImage
+            className="img-fluid"
+            src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+          />
+          <CardBody>
+            <CardTitle>Card title</CardTitle>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <Button href="#">Button</Button>
+          </CardBody>
+        </Card>
+        {/* <Routes/> */}
+      </Container>
+    );
+  }
 }
 
 export default Showcase;

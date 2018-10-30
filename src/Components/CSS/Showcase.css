@@ -1,0 +1,9 @@
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    margin: 1em;
+    width: 27%;
+}

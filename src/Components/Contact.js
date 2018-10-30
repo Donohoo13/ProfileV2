@@ -22,14 +22,14 @@ class Contact extends Component {
           </CardText>
           <hr />
           <span className="icons">
-            <a href="#">
-              <Fa icon="github-square" />{" "}
+            <a target="_blank" href="https://github.com/Donohoo13">
+              <Fa icon="github-square" />
             </a>
-            <a href="#">
-              <Fa icon="linkedin-square" />{" "}
+            <a target="_blank" href="https://www.linkedin.com/in/conner-donohoo/">
+              <Fa icon="linkedin-square" />
             </a>
-            <a href="#">
-              <Fa icon="facebook-square" />{" "}
+            <a target="_blank" href="https://www.facebook.com/Donohoo13">
+              <Fa icon="facebook-square" />
             </a>
           </span>
         </CardBody>

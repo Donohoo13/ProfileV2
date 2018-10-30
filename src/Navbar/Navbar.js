@@ -9,7 +9,6 @@ import {
   NavItem,
   NavLink,
 } from "mdbreact";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import Routes from "../Routes/Routes";
 
