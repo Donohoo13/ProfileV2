@@ -1,9 +1,22 @@
 import React, { Component } from "react";
-import { Fa, Card, CardBody, CardImage, CardTitle, CardText } from "mdbreact";
+import { Container, Modal, Button, ModalHeader, ModalBody, ModalFooter, Card, CardBody, CardImage, CardTitle, CardText } from "mdbreact";
 
 import "./CSS/Contact.css";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false
+    };
+  }
+
+  toggle = () => {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
+
   render() {
     return (
       <Card className="contactCard">
@@ -21,17 +34,19 @@ class Contact extends Component {
             directly.
           </CardText>
           <hr />
-          <span className="icons">
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Donohoo13">
-              <Fa icon="github-square" />
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/conner-donohoo/">
-              <Fa icon="linkedin-square" />
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Donohoo13">
-              <Fa icon="facebook-square" />
-            </a>
-          </span>
+          <Container>
+        <Button color="green" id="contactModal" onClick={this.toggle}>Contact Me</Button>
+        <Modal isOpen={this.state.modal} toggle={this.toggle}>
+          <ModalHeader toggle={this.toggle}>Hit me up via email</ModalHeader>
+          <ModalBody>
+            (...)
+          </ModalBody>
+          <ModalFooter>
+            <Button color="secondary" onClick={this.toggle}>Close</Button>{' '}
+            <Button color="primary">Save changes</Button>
+          </ModalFooter>
+        </Modal>
+      </Container>
         </CardBody>
       </Card>
     );

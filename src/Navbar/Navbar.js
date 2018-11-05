@@ -27,17 +27,17 @@ render() {
     return(
       <div className="nav">
         <Navbar className="mainNav" dark expand="md" scrolling fixed="top">
-          <NavbarBrand href="/">
+          <NavbarBrand active href="/">
               <strong>Conner Donohoo</strong>
           </NavbarBrand>
           <NavbarToggler onClick={ this.onClick } />
           <Collapse isOpen = { this.state.collapse } className="dropdown" navbar>
             <NavbarNav left>
-              <NavItem active>
+              <NavItem>
                   <NavLink to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                  <NavLink to="/calculator">Features</NavLink>
+                  <NavLink to="/calculator">About Me</NavLink>
               </NavItem>
               <NavItem>
                   <NavLink to="/showcase">Pricing</NavLink>
@@ -52,12 +52,6 @@ render() {
                 <NavLink to="#"><Fa icon="twitter" /></NavLink>
                 <NavLink to="#"><Fa icon="instagram" /></NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink to="#"><Fa icon="twitter" /></NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="#"><Fa icon="instagram" /></NavLink>
-              </NavItem> */}
             </NavbarNav>
           </Collapse>
         </Navbar>
