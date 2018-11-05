@@ -1,4 +1,13 @@
-.body {
+.mainNav {
+    background-color: green;
     height: 3em;
-    margin-bottom: 1em;
+}
+
+.dropdown {
+    background-color: green;
+}
+
+.socials {
+    display: flex;
+    flex-flow: row wrap;
 }
