@@ -1,7 +1,7 @@
 .contactCard {
     margin: auto;
     border: solid green;
-    width: 18em;
+    width: 45%;
     height: 25em;
     text-align: center;
 }
@@ -11,6 +11,14 @@
     margin-top: -0.6em;
 }
 
-.contactModal {
+#contactButton {
+    margin: auto;
+    text-align: center;
+}
 
+#contactSubmit {
+    background-color: green;
+    color: white;
+    width: 75%;
+    margin: auto;
 }

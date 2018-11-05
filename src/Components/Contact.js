@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Modal, Button, ModalHeader, ModalBody, ModalFooter, Card, CardBody, CardImage, CardTitle, CardText } from "mdbreact";
+import { Row, Col, Fa, Input, Container, Modal, Button, ModalBody, Card, CardBody, CardImage, CardTitle, CardText } from "mdbreact";
 
 import "./CSS/Contact.css";
 
@@ -35,17 +35,28 @@ class Contact extends Component {
           </CardText>
           <hr />
           <Container>
-        <Button color="green" id="contactModal" onClick={this.toggle}>Contact Me</Button>
-        <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>Hit me up via email</ModalHeader>
-          <ModalBody>
-            (...)
-          </ModalBody>
-          <ModalFooter>
-            <Button color="secondary" onClick={this.toggle}>Close</Button>{' '}
-            <Button color="primary">Save changes</Button>
-          </ModalFooter>
-        </Modal>
+        {/* <Row> */}
+            <Button id="contactButton" block size="md" color="red" onClick={this.toggle}>Contact Me</Button>
+            <Modal isOpen={this.state.modal} toggle={this.toggle} className="cascading-modal">
+              <div className="modal-header red white-text">
+                <h4 className="title">
+                  <Fa className="fa fa-pencil" /> Contact form</h4>
+                <button type="button" className="close" onClick={this.toggle}>
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <ModalBody className="grey-text">
+              <form action="https://formspree.io/donohoo13@gmail.com" method="POST">
+                <Input size="sm" label="Your Name" icon="user" name="name" group type="text" validate error="wrong" success="right"/>
+                <Input size="sm"  icon="envelope" label="Your Email" name="_replyto" group type="email" validate error="wrong" success="right"/>
+                <Input size="sm" label="Subject" name="_subject" icon="tag" group type="text" validate error="wrong" success="right"/>
+                {/* <Input className="contactIcon" size="sm" type="textarea" rows="2" label="Your Message" icon="pencil" required/> */}
+                {/* <input type="hidden" name="_next" value="https://site.io/thanks.html" /> */}
+                <Input id="contactSubmit" type="submit" value="Send" onClick={this.toggle}/>
+              </form>
+              </ModalBody>
+            </Modal>
+        {/* </Row> */}
       </Container>
         </CardBody>
       </Card>

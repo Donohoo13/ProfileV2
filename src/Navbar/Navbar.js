@@ -37,20 +37,20 @@ render() {
                   <NavLink to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                  <NavLink to="/calculator">About Me</NavLink>
+                  <NavLink to="/about">About Me</NavLink>
               </NavItem>
               <NavItem>
-                  <NavLink to="/showcase">Pricing</NavLink>
+                  <NavLink to="/showcase">Resume</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/contact">Options</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
               </NavItem>
             </NavbarNav>
             <NavbarNav right>
               <NavItem className="socials">
-                <NavLink to="#"><Fa icon="facebook" /></NavLink>
-                <NavLink to="#"><Fa icon="twitter" /></NavLink>
-                <NavLink to="#"><Fa icon="instagram" /></NavLink>
+                <a className="socialIcon" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Donohoo13"><Fa icon="facebook" /></a>
+                <a className="socialIcon" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/conner-donohoo/"><Fa icon="linkedin" /></a>
+                <a className="socialIcon" target="_blank" rel="noopener noreferrer" href="https://github.com/Donohoo13"><Fa icon="github" /></a>
               </NavItem>
             </NavbarNav>
           </Collapse>
