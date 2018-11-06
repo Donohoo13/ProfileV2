@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from 'react-router-dom';
+// import { Router } from 'react-router-dom';
 
 import Routes from "../Routes/Routes";
 
@@ -37,10 +37,10 @@ render() {
                   <NavLink to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                  <NavLink to="/about">About Me</NavLink>
+                  <NavLink to="/showcase">Showcase</NavLink>
               </NavItem>
               <NavItem>
-                  <NavLink to="/showcase">Resume</NavLink>
+                  <NavLink to="/resume">Resume</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to="/contact">Contact</NavLink>

@@ -1,0 +1,17 @@
+.showcaseCard {
+    text-align: center;
+    margin: auto;
+}
+
+.cardHeader {
+    background-color: black;
+    color: white;
+}
+
+.buildDate {
+    margin-bottom: -1em;
+}
+
+.cardInfo {
+    text-decoration: black;
+}

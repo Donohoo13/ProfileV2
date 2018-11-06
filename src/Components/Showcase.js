@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { CardGroup, Card, CardHeader, CardBody, CardTitle, CardText, Button } from 'mdbreact';
+import { CardGroup, Card, CardHeader, CardBody, CardText, Button } from 'mdbreact';
+import { Link } from 'react-router-dom';
+import './CSS/Showcase.css'
 
 export default class Showcase extends Component {
   render() {
@@ -7,26 +9,28 @@ export default class Showcase extends Component {
     return(
       <div>
         <CardGroup deck>
-        <Card style={{width: '22rem'}}>
-  <CardHeader color="deep-orange lighten-1">Featured</CardHeader>
+        <Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
+  <CardHeader className="cardHeader">Calculator</CardHeader>
   <CardBody>
-    <CardTitle>Special title treatment</CardTitle>
-    <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-    <Button color="deep-orange">go somewhere</Button>
+    <CardText style={{color: 'black'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+    <CardText small muted className="buildDate">Built October, 2018</CardText><hr/>
+    <Link to="/calculator"><Button color="black">Go To</Button></Link>
   </CardBody>
 </Card>
-<Card border="light" className="mb-3" style={{maxWidth: '18rem'}}>
-  <CardHeader>Header</CardHeader>
+<Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
+  <CardHeader className="cardHeader">Header</CardHeader>
   <CardBody>
-    <CardTitle tag="h5">Light card title</CardTitle>
-    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+  <CardText style={{color: 'black'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+    <CardText small muted className="buildDate">Built October, 2018</CardText><hr/>
+    <Link to="/"><Button color="black">Home</Button></Link>
   </CardBody>
 </Card>
-<Card border="dark" className="mb-3" style={{maxWidth: '18rem'}}>
-  <CardHeader>Header</CardHeader>
-  <CardBody className="text-dark">
-    <CardTitle tag="h5">Dark card title</CardTitle>
-    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+<Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
+  <CardHeader className="cardHeader">Header</CardHeader>
+  <CardBody>
+    <CardText style={{color: 'black'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+    <CardText small muted className="buildDate">Built October, 2018</CardText><hr/>
+    <Link to="/"><Button color="black">Home</Button></Link>
   </CardBody>
 </Card>
 </CardGroup>

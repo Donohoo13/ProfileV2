@@ -4,6 +4,7 @@ import Input from './Input'
 import { ClearButton } from './ClearButton';
 import './CSS/Calculator.css';
 import * as math from 'mathjs';
+import { Link } from 'react-router-dom';
 
 
 class Calculator extends Component {
@@ -45,7 +46,7 @@ class Calculator extends Component {
     
   render() {
     return (
-      <div className="Calculator">
+    //   <div className="Calculator">
         <div className="calc-wrapper">
             <Input input={this.state.input}></Input>
         <div className="row">
@@ -75,8 +76,10 @@ class Calculator extends Component {
         <div className="row">
             <ClearButton handleClear={() => this.setState({input: ""})}>Clear</ClearButton>
         </div>
+        <div className="backTo">
+        <Link to ="/showcase"><button block>Back to Showcase</button></Link>
         </div>
-      </div>
+        </div>
     );
   }
 }

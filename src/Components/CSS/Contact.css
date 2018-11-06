@@ -1,6 +1,6 @@
 .contactCard {
     margin: auto;
-    border: solid green;
+    border: solid black;
     width: 60%;
     height: 40%;
     text-align: center;
@@ -17,7 +17,7 @@
 }
 
 #contactSubmit {
-    background-color: green;
+    background-color: black;
     color: white;
     width: 75%;
     margin: auto;

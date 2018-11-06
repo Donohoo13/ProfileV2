@@ -36,9 +36,9 @@ class Contact extends Component {
           <hr />
           <Container>
         {/* <Row> */}
-            <Button id="contactButton" block size="md" color="red" onClick={this.toggle}>Contact Me</Button>
+            <Button id="contactButton" block size="md" color="black" onClick={this.toggle}>Contact Me</Button>
             <Modal isOpen={this.state.modal} toggle={this.toggle} className="cascading-modal">
-              <div className="modal-header red white-text">
+              <div className="modal-header green white-text">
                 <h4 className="title">
                   <Fa className="fa fa-pencil" /> Contact form</h4>
                 <button type="button" className="close" onClick={this.toggle}>
@@ -52,7 +52,7 @@ class Contact extends Component {
                 <Input size="sm" label="Subject" name="_subject" icon="tag" group type="text" validate error="wrong" success="right"/>
                 {/* <Input className="contactIcon" size="sm" type="textarea" rows="2" label="Your Message" icon="pencil" required/> */}
                 {/* <input type="hidden" name="_next" value="https://site.io/thanks.html" /> */}
-                <Input id="contactSubmit" type="submit" value="Send" onClick={this.toggle}/>
+                <Button color="black" id="contactSubmit" type="submit" onClick={this.toggle}>Send Message</Button>
               </form>
               </ModalBody>
             </Modal>

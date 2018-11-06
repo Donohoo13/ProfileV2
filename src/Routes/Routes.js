@@ -5,6 +5,7 @@ import Home from '../Components/Home';
 import Contact from '../Components/Contact';
 import Showcase from '../Components/Showcase';
 import Calculator from '../Components/ShowcaseComponents/Calculator/Calculator';
+import Resume from '../Components/Resume';
 
 export default class Routes extends Component {
     render() {
@@ -15,6 +16,7 @@ export default class Routes extends Component {
                 <Route path="/contact" component={Contact} />
                 <Route path="/showcase" component={Showcase} />
                 <Route path="/calculator" component={Calculator} />
+                <Route path="/resume" component={Resume} />
             </Fragment>
         );
     }
