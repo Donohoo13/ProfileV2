@@ -31,7 +31,7 @@ render() {
               <strong>Conner Donohoo</strong>
           </NavbarBrand>
           <NavbarToggler onClick={ this.onClick } />
-          <Collapse isOpen = { this.state.collapse } className="dropdown" navbar>
+          <Collapse isOpen = { this.state.collapse } className="dropdown" triggers="focus" navbar>
             <NavbarNav left>
               <NavItem>
                   <NavLink to="/">Home</NavLink>

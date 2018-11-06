@@ -47,10 +47,9 @@ class Contact extends Component {
               </div>
               <ModalBody className="grey-text">
               <form action="https://formspree.io/donohoo13@gmail.com" method="POST">
-                <Input size="sm" label="Your Name" icon="user" name="name" group type="text" validate error="wrong" success="right"/>
-                <Input size="sm"  icon="envelope" label="Your Email" name="_replyto" group type="email" validate error="wrong" success="right"/>
-                <Input size="sm" label="Subject" name="_subject" icon="tag" group type="text" validate error="wrong" success="right"/>
-                {/* <Input className="contactIcon" size="sm" type="textarea" rows="2" label="Your Message" icon="pencil" required/> */}
+                <Input size="sm" label="Your Name" name="name" group type="text" validate error="wrong" success="right"/>
+                <Input size="sm" label="Your Email" name="_replyto" group type="email" validate error="wrong" success="right"/>
+                <Input size="sm" label="Subject" name="_subject" group type="text" validate error="wrong" success="right"/>
                 {/* <input type="hidden" name="_next" value="https://site.io/thanks.html" /> */}
                 <Button color="black" id="contactSubmit" type="submit" onClick={this.toggle}>Send Message</Button>
               </form>
