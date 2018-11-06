@@ -11,3 +11,12 @@
     display: flex;
     flex-flow: row wrap;
 }
+
+.socialIcon {
+    margin-right: .7em;
+    color:white;
+}
+
+#firstSocial {
+    margin-left: .4em;
+}

@@ -4,10 +4,10 @@ import React, { Component } from "react";
 import Routes from "../Routes/Routes";
 
 import "./Navbar.css";
-import { Container, Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Fa } from 'mdbreact';
+import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Fa } from 'mdbreact';
 // import { BrowserRouter as Router } from 'react-router-dom';
 
-class MainNav extends React.Component {
+class MainNav extends Component {
   constructor(props) {
       super(props);
       this.state = {
@@ -48,7 +48,7 @@ render() {
             </NavbarNav>
             <NavbarNav right>
               <NavItem className="socials">
-                <a className="socialIcon" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Donohoo13"><Fa icon="facebook" /></a>
+                <a className="socialIcon" id="firstSocial" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Donohoo13"><Fa icon="facebook" /></a>
                 <a className="socialIcon" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/conner-donohoo/"><Fa icon="linkedin" /></a>
                 <a className="socialIcon" target="_blank" rel="noopener noreferrer" href="https://github.com/Donohoo13"><Fa icon="github" /></a>
               </NavItem>

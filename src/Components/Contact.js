@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Fa, Input, Container, Modal, Button, ModalBody, Card, CardBody, CardImage, CardTitle, CardText } from "mdbreact";
+import { Fa, Input, Container, Modal, Button, ModalBody, Card, CardBody, CardImage, CardTitle, CardText } from "mdbreact";
 
 import "./CSS/Contact.css";
 
