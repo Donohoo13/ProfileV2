@@ -7,7 +7,7 @@ export default class Showcase extends Component {
   render() {
 
     return(
-      <div>
+      <div className="showcaseCards">
         <CardGroup deck>
         <Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
   <CardHeader className="cardHeader">Calculator</CardHeader>
@@ -21,6 +21,22 @@ export default class Showcase extends Component {
   <CardHeader className="cardHeader">Header</CardHeader>
   <CardBody>
   <CardText style={{color: 'black'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+    <CardText small muted className="buildDate">Built October, 2018</CardText><hr/>
+    <Link to="/"><Button color="black">Home</Button></Link>
+  </CardBody>
+</Card>
+<Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
+  <CardHeader className="cardHeader">Header</CardHeader>
+  <CardBody>
+    <CardText style={{color: 'black'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+    <CardText small muted className="buildDate">Built October, 2018</CardText><hr/>
+    <Link to="/"><Button color="black">Home</Button></Link>
+  </CardBody>
+</Card>
+<Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
+  <CardHeader className="cardHeader">Header</CardHeader>
+  <CardBody>
+    <CardText style={{color: 'black'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
     <CardText small muted className="buildDate">Built October, 2018</CardText><hr/>
     <Link to="/"><Button color="black">Home</Button></Link>
   </CardBody>
