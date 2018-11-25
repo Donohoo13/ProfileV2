@@ -22,16 +22,18 @@ class Contact extends Component {
       <Card className="contactCard">
         <CardImage
           className="img-fluid"
-          src="https://lh3.googleusercontent.com/zbQkGHFAm4Jj9RL7fdKCuY651K9JkYY43JkDv5GBVYSLv98CYcdwOS-_l2It0dVy-8z_9Y7cRaxQRWwB1pUmYJ-33SeJvLH6-I47HJSGDmZS02Ihv7yMJMUD8PVCU7yzpNgb76bZYTFmEiPNrC2xAJE5vui1yHkzOyRHj1lK8y_ZFcAxkYPLZFRidfPDnfYWVfUYyzy6IUwwLkGA31DU50uhjfnEkKwP2m5fdEyB4J6pLRo3r1UTyp-PlYrB09ErBXuIjTxHVhZcmttNsVX73YPWh_iBMVz-_CDgBe9yH7zrtnzfVCOEei54Pv-3oCfwE_oxK8xjKL28nTRDbvEpCWBSorOLU3vfoSYuGBQAXCgNuBvPgqMxrMCp-5k6DmesKAPrXr3umiGr_rDRvi7JNqFx7aislVYDZ4Eo04w_axvtqHXLcYhq-7GwRNIRlWxeekm5raqGQeLH0MUwkLbDchIvyFUNIfTbNv6hN3X27V1VejF0rQjC4Z-9kfLB2SYLTpxeuyWDRGlL99jFed5wE9Fz5szNOPaPUCUycXYV8Sw05NcrPP42z-6hJbY2Khw7PKDdVmNKA7O5lNwMcx5LOlHmzveiEBs6Wfx3RZvBt4zWkuAERfx1I5jzktidSnFRwolqivrxoByvbaAfwlvhAJKdJA=w1186-h790-no"
+          src="https://lh3.googleusercontent.com/4HD82iJYE54t3LRWjHGrRJZcgUlgBkC3do2riCqv0bNmSvD2QYZyAFM0tGMxZMnoKz7OSo1Oy7Dx-wKz6B0ooXT_LhWS6ppCP42K-KrMYMNnYSeTw_uDLRHM5AIzmCod_wLRyCbOQ8RGnTYNjSoDKPEWE_MdA89qx4CyYigLlUqgevRuCBEX6nFb46_w0iYLXnaGsgNUtNcirMjb7Z1jHxbEbAdUa09dJsJGoB7vqCKkid8Ymr3djg8e1itZpUbTZ-quBDaVgU1scRYlWgAoG60yYXquheQdnmYpTB1X6JpM_83_l28iW0Ht62rF1EFsZ17ZIkaP-ZxaQdgsXEUOBzvsYo2jqD95OOngtNpVB1XXVtnxYoXzCpsofkPRJtkEZhAcVb3KEo9AYQ8H0w0aeb288l5wOG0xsMlSRML7sqVPaWMMW_715vik0P5shcfkT31MZMxP_KemwovJJO2dTkyLreaa6nvnTn1Gldzqpkla7vaxvInYWa9DMfAVH1_uk6gI8iDNx2WkWAqB1ACLDHVwzsq9rknrpursDRvzB7Xh_a5SU4fBkLChMxuUF2n-iQsmg4r-wC-JvllcJO6jhiQ9dRNUvOyW60-dW5qeEsN3fRtva6hNQT0izetnaDDQm2AmwzJtpHQu50weGxS2hreo9Q=w1054-h790-no"
           waves
         />
         <CardBody>
           <CardTitle>Conner Donohoo</CardTitle>
           <CardTitle className="subTitle">Web Developer</CardTitle>
           <CardText>
-            You can contact me through any of the following, highlighted links. You can also  
-            <a href="mailto:donohoo13@gmail.com"> email me </a>
-            directly.
+          I'm a young, determined and hard working individual with a great work ethic. 
+          I have a strong and savvy customer service background coupled with reliable people skills 
+          to help build any workforce. I've been programming for a very short amount of time now, 
+          but what I lack in tenure I more than make up for with grit and dedication. 
+          You can send me your contact information below and I will get back to you.  Thank you!
           </CardText>
           <hr />
           <Container>

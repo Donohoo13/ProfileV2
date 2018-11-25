@@ -1,14 +1,10 @@
-.showcaseCards {
-    display: flex;
-    flex-flow: row wrap;
-    /* justify-content: space-around; */
-}
+
 
 .showcaseCard {
+    display: flex;
     text-align: center;
-    margin: auto;
     min-width: 25%;
-    max-width: 33%;
+    /* max-width: 33%; */
 }
 
 .cardHeader {
