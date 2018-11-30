@@ -13,17 +13,16 @@ class MainNav extends Component {
       this.state = {
           collapse: false,
       };
-      this.onClick = this.onClick.bind(this);
   }
 
-onClick(){
+onClick = () => {
   this.setState({
       collapse: !this.state.collapse,
     });
 }
 
 render() {
-  // const bgPink = {backgroundColor: '#ec407a'}
+
     return(
       <div className="nav">
         <Navbar className="mainNav" dark expand="md" scrolling fixed="top">
