@@ -30,9 +30,9 @@ export default class Showcase extends Component {
 <Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
   <CardHeader className="cardHeader">BookCase</CardHeader>
   <CardBody>
-    <CardText style={{color: 'black'}}>A personal fullstack CRUD application built with React, Micro, and MongoDB to track books.</CardText>
-    <CardText small muted className="buildDate">Building Currently</CardText><hr/>
-    <a to="" target="_blank" rel="noopener noreferrer">
+    <CardText style={{color: 'black'}}>A personal full stack CRUD application built with React, Micro, and MongoDB to track books.</CardText>
+    <CardText small muted className="buildDate">Finished December, 2018</CardText><hr/>
+    <a to="https://books-tracker.netlify.com/" target="_blank" rel="noopener noreferrer">
     <Button color="black">Go To</Button>
     </a>
   </CardBody>
