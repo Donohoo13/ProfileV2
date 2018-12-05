@@ -32,7 +32,7 @@ export default class Showcase extends Component {
   <CardBody>
     <CardText style={{color: 'black'}}>A personal full stack CRUD application built with React, Micro, and MongoDB to track books.</CardText>
     <CardText small muted className="buildDate">Finished December, 2018</CardText><hr/>
-    <a to="https://books-tracker.netlify.com/" target="_blank" rel="noopener noreferrer">
+    <a href="https://books-tracker.netlify.com/" target="_blank" rel="noopener noreferrer">
     <Button color="black">Go To</Button>
     </a>
   </CardBody>
