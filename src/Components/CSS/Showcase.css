@@ -1,10 +1,7 @@
-
-
 .showcaseCard {
     display: flex;
     text-align: center;
-    min-width: 25%;
-    /* max-width: 33%; */
+    min-width: 30%;
 }
 
 .cardHeader {

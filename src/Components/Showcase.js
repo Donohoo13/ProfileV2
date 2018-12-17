@@ -7,7 +7,7 @@ export default class Showcase extends Component {
   render() {
 
     return(
-      <div>
+      <div className="showcase">
         <CardGroup deck className="showcaseCards">
         <Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
   <CardHeader className="cardHeader">Calculator</CardHeader>
@@ -37,22 +37,16 @@ export default class Showcase extends Component {
     </a>
   </CardBody>
 </Card>
-{/* <Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
-  <CardHeader className="cardHeader">Header</CardHeader>
+<Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
+  <CardHeader className="cardHeader">Weather App</CardHeader>
   <CardBody>
-    <CardText style={{color: 'black'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-    <CardText small muted className="buildDate">Built October, 2018</CardText><hr/>
-    <Link to="/"><Button color="black">Home</Button></Link>
+    <CardText style={{color: 'black'}}>A built from scratch weather tracking application, touching 2 seperate API's to get up to date weather and city information.</CardText>
+    <CardText small muted className="buildDate">Currently Building</CardText><hr/>
+    <a href="" target="_blank" rel="noopener noreferrer">
+    <Button color="black">Go To</Button>
+    </a>
   </CardBody>
 </Card>
-<Card border="dark" className="mb-3 showcaseCard" style={{maxWidth: '18rem'}}>
-  <CardHeader className="cardHeader">Header</CardHeader>
-  <CardBody>
-    <CardText style={{color: 'black'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-    <CardText small muted className="buildDate">Built October, 2018</CardText><hr/>
-    <Link to="/"><Button color="black">Home</Button></Link>
-  </CardBody>
-</Card> */}
 </CardGroup>
       </div>
     );
