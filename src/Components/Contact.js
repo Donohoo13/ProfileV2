@@ -21,8 +21,8 @@ class Contact extends Component {
     return (
       <Card className="contactCard">
         <CardImage
-          className="img-fluid"
-          src="https://lh3.googleusercontent.com/4HD82iJYE54t3LRWjHGrRJZcgUlgBkC3do2riCqv0bNmSvD2QYZyAFM0tGMxZMnoKz7OSo1Oy7Dx-wKz6B0ooXT_LhWS6ppCP42K-KrMYMNnYSeTw_uDLRHM5AIzmCod_wLRyCbOQ8RGnTYNjSoDKPEWE_MdA89qx4CyYigLlUqgevRuCBEX6nFb46_w0iYLXnaGsgNUtNcirMjb7Z1jHxbEbAdUa09dJsJGoB7vqCKkid8Ymr3djg8e1itZpUbTZ-quBDaVgU1scRYlWgAoG60yYXquheQdnmYpTB1X6JpM_83_l28iW0Ht62rF1EFsZ17ZIkaP-ZxaQdgsXEUOBzvsYo2jqD95OOngtNpVB1XXVtnxYoXzCpsofkPRJtkEZhAcVb3KEo9AYQ8H0w0aeb288l5wOG0xsMlSRML7sqVPaWMMW_715vik0P5shcfkT31MZMxP_KemwovJJO2dTkyLreaa6nvnTn1Gldzqpkla7vaxvInYWa9DMfAVH1_uk6gI8iDNx2WkWAqB1ACLDHVwzsq9rknrpursDRvzB7Xh_a5SU4fBkLChMxuUF2n-iQsmg4r-wC-JvllcJO6jhiQ9dRNUvOyW60-dW5qeEsN3fRtva6hNQT0izetnaDDQm2AmwzJtpHQu50weGxS2hreo9Q=w1054-h790-no"
+          className="img-fluid, profileIMG"
+          src="./profileIMG.jpg"
           waves
         />
         <CardBody>

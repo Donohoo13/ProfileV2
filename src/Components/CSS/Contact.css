@@ -1,8 +1,8 @@
 .contactCard {
     margin: auto;
     border: solid black;
-    width: 60%;
-    height: 40%;
+    width: 50vh;
+    height: 110vh;
     text-align: center;
 }
 
@@ -21,4 +21,9 @@
     color: white;
     width: 75%;
     margin: auto;
+}
+
+.profileIMG {
+    height: 55vh;
+    width: 50vh;
 }
